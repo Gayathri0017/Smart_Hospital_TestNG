@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.Pages.SearchPage;
 public class SearchTest extends BaseTest {
     @Test(priority=1)
-    public void verifyExistingPatientSearch() {
+    public void validSearch() {
         SearchPage searchPage=new SearchPage(getDriver());
         searchPage.login();
         searchPage.searchBar.sendKeys("Dharani");
@@ -18,7 +18,7 @@ public class SearchTest extends BaseTest {
         Assert.assertTrue(actual.contains("Dharani"));
     }
     @Test(priority=2)
-    public void verifyNonExistingPatientSearch() {
+    public void invalidSearch() {
         SearchPage searchPage=new SearchPage(getDriver());
         searchPage.login();
         searchPage.searchBar.clear();
