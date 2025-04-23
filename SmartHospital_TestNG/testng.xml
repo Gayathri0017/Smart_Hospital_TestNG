@@ -5,6 +5,7 @@
    <classes>
        <class name="com.Tests.SearchTest"/>
        <class name="com.Tests.DischargeTest"/>
+       <class name="com.Tests.AccountantIncomeTest"/>
    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
