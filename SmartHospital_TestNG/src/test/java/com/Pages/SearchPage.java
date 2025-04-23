@@ -1,6 +1,5 @@
 package com.Pages;
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,4 +32,15 @@ public class SearchPage extends BasePage{
         wait.until(ExpectedConditions.elementToBeClickable(doctor)).click();
         wait.until(ExpectedConditions.elementToBeClickable(signin)).click();
     }
+	public void clickDelete() {
+		clickmethod(delBtn);
+	}
+	public void sendKeysMethod(WebElement ele,String val) {
+		ele.sendKeys(val);
+	}
+	public void clickmethod(WebElement ele) {
+		ele.click();
+	}
+	
+
 }
